@@ -38,7 +38,7 @@
 
 .highlight__description {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   margin-bottom: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -69,8 +69,12 @@
 
 @media (max-width: 768px) {
   .highlight {
-    height: 70vh;
+    height: 55vh;
     width: 100%;
     margin: 1rem 0;
+  }
+
+  .highlight__title {
+    font-size: 1.7rem;
   }
 }

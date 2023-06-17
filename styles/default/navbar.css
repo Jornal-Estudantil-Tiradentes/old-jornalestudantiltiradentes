@@ -11,6 +11,7 @@
   background-color: var(--tema-rosa);
   z-index: 99;
   animation: slideIn cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  overflow-y: scroll;
 }
 
 .navbar__heading {
