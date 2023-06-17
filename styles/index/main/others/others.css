@@ -1,0 +1,21 @@
+.others {
+  width: 35%;
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1024px) {
+  .others {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .others {
+    margin: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}

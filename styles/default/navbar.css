@@ -1,0 +1,76 @@
+.navbar--hidden {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 15rem;
+  height: 100%;
+  background-color: var(--tema-rosa);
+  z-index: 99;
+  animation: slideIn cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.navbar__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.navbar__logo img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.navbar__btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  margin: 0 0.5rem;
+}
+
+.navbar__theme {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 1.7rem;
+  font-family: "Rozha One", serif;
+  border-left: 3px solid var(--tema-rosa-mais-claro);
+  padding-left: .5rem;
+  background-color: #ffffff20;
+  margin-bottom: .5rem;
+}
+
+.navbar__list {
+  padding: .5rem .5rem;
+  color: white;
+  margin-bottom: .5rem;
+}
+
+.navbar__list li {
+  margin-bottom: .5rem;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+.navbar__list li:hover {
+  text-decoration: underline;
+}
+
+@keyframes slideIn {
+  from {
+    left: -40%;
+  }
+
+  to {
+    left: 0;
+  }
+}

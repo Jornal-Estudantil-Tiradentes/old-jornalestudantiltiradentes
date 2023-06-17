@@ -1,0 +1,17 @@
+.article {
+  margin: 0 8rem;
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1024px) {
+  .article {
+    margin: 0 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .article {
+    margin: 0 2rem;
+  }
+}

@@ -1,0 +1,18 @@
+.headline {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 768px) {
+  .headline {
+    flex-direction: column;
+    height: max-content;
+  }
+}

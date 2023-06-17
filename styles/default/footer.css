@@ -1,0 +1,16 @@
+footer {
+  width: 100%;
+  display: block;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+  padding: .8rem;
+  background-color: var(--tema-vermelho);
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+}

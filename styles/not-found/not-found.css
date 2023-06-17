@@ -1,0 +1,28 @@
+.not-found {
+  text-align: center;
+  color: #535353;
+}
+
+.alert {
+  font-size: 8rem;
+  font-weight: bolder;
+  color: #00000022;
+  margin: 5rem 0;
+}
+
+.message {
+  font-size: 1.5rem;
+  color: #535353;
+}
+
+.return {
+  color: white;
+  background-color: var(--tema-vermelho);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 2px 2px #00000022;
+  display: block;
+  margin: 5rem auto;
+  width: 20rem;
+}

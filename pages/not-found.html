@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/error.png" />
+    <script
+      src="https://kit.fontawesome.com/dbb6688794.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/default/reset.css" />
+    <link rel="stylesheet" href="/styles/default/variables.css" />
+    <link rel="stylesheet" href="/styles/default/skeleton.css" />
+    <link rel="stylesheet" href="/styles/default/header.css" />
+    <link rel="stylesheet" href="/styles/default/navbar.css" />
+    <link rel="stylesheet" href="/styles/default/footer.css" />
+    <link rel="stylesheet" href="/styles/not-found/not-found.css" />
+    <title>Erro 404</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="header__btn">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+      <h1 class="header__title">PÁGINA NÃO ENCONTRADA</h1>
+      <div>
+        <a href="/">
+          <img
+            class="header__logo"
+            src="/public/logo.png"
+            alt="Logotipo Tiradentes"
+          />
+        </a>
+      </div>
+    </header>
+    <nav class="navbar navbar--hidden">
+      <div class="navbar__heading">
+        <div class="navbar__logo">
+          <img
+            src="/public/logo.png"
+            alt="Logotipo Jornal Estudantil Tiradentes"
+          />
+        </div>
+        <button class="navbar__btn">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+      <div class="navbar__menu">
+        <h2 class="navbar__theme">Notícias</h2>
+        <ul class="navbar__list">
+          <li>
+            <a href="/pages/list.html?principal">Principal</a>
+          </li>
+          <li>
+            <a href="/pages/list.html?destaque1">Destaque 1</a>
+          </li>
+          <li>
+            <a href="/pages/list.html?destaque2">Destaque 2</a>
+          </li>
+          <li>
+            <a href="/pages/list.html?cultura">Cultura</a>
+          </li>
+          <li>
+            <a href="/pages/list.html?fique_ligado">Fique Ligado</a>
+          </li>
+          <li>
+            <a href="/pages/list.html?lingua_inglesa">Língua Inglesa</a>
+          </li>
+          <li>
+            <a href="/pages/list.html?musica">Música</a>
+          </li>
+          <li>
+            <a href="/pages/list.html?politica">Política</a>
+          </li>
+          <li>
+            <a href="/pages/list.html?saude_e_bem_estar">Saúde e Bem-Estar</a>
+          </li>
+        </ul>
+        <h2 class="navbar__theme">Sobre Nós</h2>
+        <ul class="navbar__list">
+          <li>
+            <a href="/pages/about.html">Nossa História</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="not-found">
+      <h1 class="alert">Ops!</h1>
+      <p class="message">
+        Parece que alguém se perdeu por aqui! <br />
+        Não encontramos essa página.
+      </p>
+      <a href="/" class="return">Vamos voltar para casa</a>
+    </section>
+    <script src="/scripts/common/navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.skeleton-text {
+  animation: skeleton-loading 1s linear infinite alternate;
+  content: "";
+  border-radius: 2px;
+  background-color: hsl(200, 20%, 80%);
+}
+
+.skeleton-image {
+  animation: skeleton-loading 1s cubic-bezier(0.19, 1, 0.22, 1) infinite alternate;
+  background-color: hsl(200, 20%, 80%);
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 80%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
