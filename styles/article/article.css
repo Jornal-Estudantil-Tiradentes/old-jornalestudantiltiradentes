@@ -1,5 +1,6 @@
 .article {
   margin: 0 8rem;
+  min-height: 80vh;
 }
 
 /* MEDIA QUERYS */
