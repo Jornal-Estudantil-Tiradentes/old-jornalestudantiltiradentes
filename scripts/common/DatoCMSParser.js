@@ -22,9 +22,21 @@ function createDatoCMSParser() {
     return data.filter((object) => !object.subject);
   };
 
+  const getAllThemesIds = function (data) {
+    let records = data.filter((object) => object.subject && object.title);
+    let themesIds = [];
+    records.forEach((record) => {
+      if (!themesIds.includes(record.item_type.id)) {
+        themesIds.push(record.item_type.id);
+      }
+    });
+    return themesIds;
+  };
+
   // Retorna o objeto com os métodos de filtragem
   return {
     getOnlyRecords,
     getOnlyBlocks,
+    getAllThemesIds,
   };
 }

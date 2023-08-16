@@ -10,6 +10,7 @@ function createDatoCMSFetcher() {
     listByTheme: "https://api-jornalestudantiltiradentes.vercel.app/api/list/",
     getById: "https://api-jornalestudantiltiradentes.vercel.app/api/item/",
     getUploadData: "https://api-jornalestudantiltiradentes.vercel.app/api/upload/",
+    getModelData: "https://api-jornalestudantiltiradentes.vercel.app/api/model/"
   };
 
   /**
@@ -70,11 +71,22 @@ function createDatoCMSFetcher() {
     return await fetchDatoCMS(url);
   };
 
+  /**
+   * Método `getUploadData()` do fetcher para buscar dados de upload do DatoCMS por ID.
+   * @param {string} modelId - ID do upload a ser buscado.
+   * @returns {Promise<Object|null>} Promise que resolva com os dados do upload ou nulo em caso de erro.
+   */
+  const getModelData = async function (modelId) {
+    const url = endpoints.getModelData + modelId;
+    return await fetchDatoCMS(url);
+  };
+
   // Retorna o objeto com os métodos de busca
   return {
     listAll,
     listByTheme,
     getById,
     getUploadData,
+    getModelData,
   };
 }

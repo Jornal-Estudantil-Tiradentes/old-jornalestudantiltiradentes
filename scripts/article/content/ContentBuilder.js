@@ -35,7 +35,6 @@ const constructorsFunctions = {
     blockquoteImg.classList.add("blockquote__img", "datoimg");
     blockquoteWithImg.innerText = block.blockquote_text;
     blockquoteAuthor.innerText = block.blockquote_author;
-    blockquoteImg.id = block.blockquote_img.upload_id;
     blockquoteWithImg.append(blockquoteAuthor, blockquoteImg);
     return blockquoteWithImg;
   },
@@ -139,6 +138,28 @@ const constructorsFunctions = {
     );
     iframe.setAttribute("allowfullscreen", true);
     return iframe;
+  },
+
+  2176429(block) {
+    //Item de Horoscopo
+    console.log(block);
+    const horoscope = document.createElement("article");
+    const horoscopeText = document.createElement("div");
+    const horoscopeSign = document.createElement("h3");
+    const horoscopePrevision = document.createElement("p");
+    const horoscopeImg = document.createElement("div");
+
+    horoscopeSign.textContent = block.sign;
+    horoscopePrevision.textContent = block.prevision;
+    horoscopeImg.id = block.image.upload_id;
+
+    horoscope.classList.add("horoscope");
+    horoscopeText.classList.add("horoscope__text");
+    horoscopeText.append(horoscopeSign, horoscopePrevision);
+    horoscopeImg.classList.add("horoscope__img", "datoimg");
+
+    horoscope.append(horoscopeImg, horoscopeText);
+    return horoscope;
   },
 };
 

@@ -141,6 +141,29 @@ ol li {
   margin-bottom: 1rem;
 }
 
+.horoscope {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.horoscope__text {
+  width: 70%;
+  font-size: 1.3rem;
+}
+
+.horoscope__img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
+  border: 1px solid var(--tema-cinza-borda);
+  margin-right: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .dialogue {
   font-size: 1.2rem;
 }
@@ -233,5 +256,16 @@ p.skeleton-text {
 
   .video {
     height: 250px;
+  }
+
+  .horoscope {
+    flex-direction: column;
+  }
+
+  .horoscope__img {
+    width: 70vw;
+    height: 70vw;
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 }
