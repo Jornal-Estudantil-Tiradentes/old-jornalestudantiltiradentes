@@ -28,7 +28,7 @@
   margin-bottom: .5rem;
 }
 
-.article__updated {
+.article__date{
   display: block;
   font-style: italic;
 }

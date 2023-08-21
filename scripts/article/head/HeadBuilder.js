@@ -34,15 +34,16 @@ function createHeadBuilder() {
     reference.innerText = record.reference;
 
     // Cria o elemento de data de atualização do artigo
-    const updated = document.createElement("span");
-    updated.classList.add("article__updated");
-    updated.innerText = `Atualizado em ${new Date(record.meta.updated_at).toLocaleString()}`;
+    const date = document.createElement("span");
+    date.classList.add("article__date");
+    date.innerText = `Criado em ${new Date(record.meta.created_at).toLocaleString()}.
+    Atualizado em ${new Date(record.meta.updated_at).toLocaleString()}`;
 
     // Define o título da página como o título do artigo
     document.title = record.title;
 
     // Adiciona os elementos ao contêiner
-    container.append(title, description, author, reference, updated);
+    container.append(title, description, author, reference, date);
   };
 
   return {
