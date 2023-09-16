@@ -161,6 +161,15 @@ const constructorsFunctions = {
     horoscope.append(horoscopeImg, horoscopeText);
     return horoscope;
   },
+
+  2294072(block) {
+    console.log(block);
+    const audio = document.createElement("audio");
+    audio.classList.add("audio");
+    audio.setAttribute('controls', true);
+    audio.src = block.link;
+    return audio;
+  },
 };
 
 /**

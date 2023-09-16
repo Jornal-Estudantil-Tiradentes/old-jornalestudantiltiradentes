@@ -197,6 +197,28 @@ ol li {
   content: '"';
 }
 
+.audio {
+  display: block;
+  margin: 2rem auto;
+}
+
+.audio::-webkit-media-controls-panel {
+  background-color: var(--tema-vermelho);
+}
+
+.audio::-webkit-media-controls-play-button {
+  background-color: #ffffff99;
+  border-radius: 50%;
+}
+
+.audio::-webkit-media-controls-current-time-display {
+  color: #fff;
+}
+
+.audio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+}
+
 /* SKELETONS */
 
 h3.skeleton-text {
