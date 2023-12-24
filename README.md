@@ -18,7 +18,6 @@ Para contribuir, clone o repositório com ```git clone https://github.com/Jornal
 
 ## Agradecimentos
 * [Renan da Silva Oliveira Andrade](https://github.com/marshmll/) - Criador do jornal, front-end e back-end.
-* [Alisson dos Santos Zanetti](https://github.com/OiAlisson/) - Criação do design de certas páginas, criação de design de ads e campanhas.
 * José Cristiano Orrigo - Professor Orientador do projeto.
 
 <sub>Texto escrito por Renan :)</sub>
