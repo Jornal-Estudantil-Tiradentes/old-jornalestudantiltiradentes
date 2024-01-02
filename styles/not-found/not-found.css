@@ -26,3 +26,8 @@
   margin: 5rem auto;
   width: 20rem;
 }
+
+.return:hover {
+  transform: scale(1.01);
+  transition: 200ms;
+}
